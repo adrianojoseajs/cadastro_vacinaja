@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro</title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        <h2 class="text-primary text-center">Cadastro para vacinação</h2>
+            <div class="formContainer">
+                <div class="form-group">
+                    <label>Nome:</label>
+                    <input class="form-control" type="text" id="name"/>
+                   <label>Idade:</label>
+                   <input type="number" id="rollNo" class="form-control"/>
+                   <label>Grupo:</label>
+                   <select class="form-control" id="subject">
+                       <option value="Trabalhador da saúde">Trabalhador da saúde</option>
+                       <option value="Grupo indígena ou quilombola">Grupo indígena ou quilombola</option>
+                       <option value="idoso">Idoso</option>
+                   </select>
+                   <small><input type="checkbox" class="form-check-input" id="agree"/>Você concorda com nossos termos e condições.</small>
+                   <br/>
+                   <button class="btn btn-success" id="submitBtn" disabled>enviar</button>
+                </div>
+            </div>
+        <div id="bd" class="table-responsive">
+            
+        </div>
+        </div>
+    </body>
+</html>
